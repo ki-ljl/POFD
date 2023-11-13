@@ -2,6 +2,8 @@
 Code for NeurIPS 2023 paper---**P**ublic **O**pinion **F**ield Effect Fusion in Representation Learning for Trending Topics **D**iffusion.
 ![poster](https://github.com/ki-ljl/POFD/assets/56509367/47253ff7-7c04-4fb8-904b-c64b945d25d8)
 
+**Coming soon!**
+
 ## Overview
 ```bash
 POFD:.
