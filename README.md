@@ -96,12 +96,10 @@ python nc_dblp_main.py
 
 ## Cite
 ```
-@inproceedings{
-  li2023public,
+@inproceedings{li2023public,
   title={Public Opinion Field Effect Fusion in Representation Learning for Trending Topics Diffusion},
-  author={Junliang Li and Yajun Yang and Qinghua Hu and Xin Wang and Hong Gao},
+  author={Li, Junliang and Yang, Yajun and Hu, Qinghua and Wang, Xin and Gao, Hong},
   booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-  year={2023},
-  url={https://openreview.net/forum?id=RFE1eI0zNZ}
+  year={2023}
 }
 ```
