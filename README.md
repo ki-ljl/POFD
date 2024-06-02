@@ -1,5 +1,6 @@
 ﻿# POFD
 Code for NeurIPS 2023 paper---**P**ublic **O**pinion **F**ield Effect Fusion in Representation Learning for Trending Topics **D**iffusion.
+![poster](https://github.com/ki-ljl/POFD/assets/56509367/d9b003cd-4d6f-43b0-85a4-dbec1b2042b4)
 
 # Overview
 ```bash
@@ -25,18 +26,16 @@ POFD:.
     │  
     └─checkpoints   
 ```
-1**get_data.py**: This file is used to process the data.
-2**pytorchtools**.py: This file is used to define the early_stopping mechanism.
-3**requirements.txt**: Dependencies file.
-4**data/**：Dataset folder.
-5**src/infomax.py**: This file is used to maximize the information, i.e., to calculate $L_p$.
-6**src/lp_main.py**: Public opinion concern prediction (**Section 4.2**).
-7**src/models.py**: POFD implementation.
-8**src/nc_dblp_main**.py: Universality analysis (**Section 4.4**).
-9**src/nc_main.py**: Event classification (**Section 4.3**).
-0**src/util.py**: Defining various toolkits.
-
-Since github limits the size of uploaded files, you can get the full dataset from [Google Cloud Drive](https://www.kaggle.com/datasets/mdepak/fakenewsnet).
+1. **get_data.py**: This file is used to process the data.
+2. **pytorchtools**.py: This file is used to define the early_stopping mechanism.
+3. **requirements.txt**: Dependencies file.
+4. **data/**：Dataset folder.
+5. **src/infomax.py**: This file is used to maximize the information, i.e., to calculate $L_p$.
+6. **src/lp_main.py**: Public opinion concern prediction (**Section 4.2**).
+7. **src/models.py**: POFD implementation.
+8. **src/nc_dblp_main**.py: Universality analysis (**Section 4.4**).
+9. **src/nc_main.py**: Event classification (**Section 4.3**).
+10. **src/util.py**: Defining various toolkits.
 
 # Dependencies
 Please install the following packages:
@@ -69,7 +68,6 @@ pip install -r requirements.txt
 cd src/
 python lp_main.py --dataset BuzzFeed
 python lp_main.py --dataset PolitiFact
-python lp_main.py --dataset Twitter
 ```
 
 # Event Classification
@@ -77,11 +75,21 @@ python lp_main.py --dataset Twitter
 cd src/
 python nc_main.py --dataset BuzzFeed
 python nc_main.py --dataset PolitiFact
-python nc_main.py --dataset Twitter
 ```
 
 # Universality Analysis
 ```bash
 cd src/
 python nc_dblp_main.py
+```
+
+# cite
+```
+@article{li2024public,
+  title={Public Opinion Field Effect Fusion in Representation Learning for Trending Topics Diffusion},
+  author={Li, Junliang and Yajun, Yang and Hu, Qinghua and Wang, Xin and Gao, Hong},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
 ```
